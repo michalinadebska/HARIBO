@@ -1,0 +1,443 @@
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat
+}
+
+
+nav.desktop {
+    display: none;
+}
+
+body {
+    font-family: 'Chewy';
+    background-color: #CB1177
+}
+
+
+/*FOR MOBILES-MOBILE FIRST APPROACH*/
+
+
+/*HEADER*/
+
+.mobilefirst {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4%;
+    margin-right: 5%
+}
+
+.mobilefirst>a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav#mobile {
+    display: none;
+    flex-direction: column;
+}
+
+
+#mobile>a {
+    color: white;
+    text-decoration: none;
+    line-height: 20px;
+    text-align: center;
+    border-bottom: solid white 2px;
+    margin-bottom: 20px
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 10%;
+    font-size: 15px;
+    margin-top: 4%;
+    background-image: url(images/Group\ 86.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: bottom;
+    background-size: 570px;
+}
+
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 35%
+}
+
+
+h2 {
+    font-size: 50px;
+    margin-right: 5%;
+
+}
+
+h3 {
+    color: green;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.package {
+    position: relative;
+    right: 18%;
+}
+
+
+/*INGREDIENTS AND NUTRITIONAL VALUE SECTION*/
+
+
+.ingredients-nutri {
+    position: relative;
+    height: 700px;
+}
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0px 80px 0px;
+    background-image: url(images/Group\ 90.svg);
+    background-size: 400px 400px;
+    background-position: right;
+    color: white;
+    text-align: left;
+
+}
+
+.ing {
+    margin-left: 46px;
+    margin-bottom: 50px;
+}
+
+.ingredients {
+    font-size: 30px;
+    margin-left: 48px;
+}
+
+p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 60px
+}
+
+.nutritionalvalue {
+    width: 165%;
+    position: absolute;
+    top: 23%;
+    margin-left: -26px
+}
+
+
+/*RECYCLING CAMPAIGN SECTION*/
+
+
+.recycle {
+    width: 147%;
+    margin-left: -36px;
+    margin-top: -40px
+}
+
+.fifty-off {
+    position: relative;
+}
+
+.recyclebutton {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    height: 30px;
+    width: 120px;
+    border-radius: 14px;
+    border:none
+}
+
+.recyclebutton>a{
+    text-decoration: none;
+    font-weight: 900;
+    color:black;
+
+}
+
+
+
+/*JOIN US ON SOCIAL MEDIA SECTION*/
+
+
+.some {
+    margin-left: 200px
+}
+
+
+
+
+/*FOOTER*/
+
+
+.footer {
+    height: 30px;
+    width: 100%;
+    background-color: white;
+
+}
+
+section>p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 20px
+}
+
+.footerelements>p {
+
+    line-height: 20px;
+    color: white;
+    font-family: 'Chewy';
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 16px;
+
+}
+
+footer {
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+}
+
+.footerelements {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.languagepref {
+    margin-left: 20px;
+    background-color: rgba(245, 245, 245, 0.295);
+    border-radius: 20px;
+    width: 320px;
+    height: 27px;
+    display: flex;
+    justify-content: left;
+
+}
+
+
+.languagepref>p {
+    font-size: 15px;
+    margin-top: -6px;
+    color: white;
+    font-weight: lighter
+}
+
+.trademark {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+
+.trademark>p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-left: 23px;
+    margin-top: 7px;
+    padding: 10px
+}
+
+.main{
+    display:none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOR DESKTOPS*/
+
+
+
+@media (min-width:898px) {
+
+
+    nav.desktop {
+
+        display: flex;
+        padding: 20px;
+        justify-content: flex-end;
+        font-size: 30px;
+        width: 75%;
+        margin-left: auto;
+        align-items: center;
+        text-align: center;
+        margin-top: -1%;
+        
+
+    }
+
+    nav.desktop>a {
+        margin-left: 45px;
+        text-decoration: none;
+        color: white;
+        width: 100%;
+
+
+    }
+
+    nav.desktop>a:hover {
+        color: rgb(250, 79, 179);
+        transform: scale(1.3);
+        
+    }
+
+    .joinus {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* transition: all 0.3 ease-in; */
+        margin-right: 3%;
+    }
+
+    .joinus>.arrow-image {
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        width: 100%;
+    }
+
+    .joinus:hover {
+        transform: scale(1.3);
+    }
+
+    .joinus-text {
+        margin-right: 20%;
+        font-family: 'Chewy';
+        font-size: 30px;
+    }
+
+
+    .mobile {
+        display: none;
+    }
+
+
+    img.burgermenu {
+        display: none
+    }
+
+    h1,
+    h2,
+    h3 {
+        display: none
+    }
+
+    header {
+        margin-top: -2%;
+        justify-content: flex-start;
+        position: relative;
+        right: 7%;
+        background-image: none
+    }
+
+    .package {
+        height: 1000px;
+        width: 1000px;
+        position: absolute;
+        margin-right:100px
+        
+    }
+
+.landingpage{
+    display:flex;
+    flex-direction: column;
+    position:relative
+    
+}
+
+.main{
+    display:block;
+    position:absolute;
+    left:45%;
+    width:60%;
+    margin-top:10%
+}
+
+
+.landingpage>button{
+    height: 50px;
+    width: 190px;
+    border-radius: 19px;
+    border:none;
+    position:absolute;
+    top:550px;
+    left:780px;
+    z-index:1
+}
+
+.landingpage>button>a{
+    text-decoration: none;
+    font-weight: 900;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.nutritionalvalue{
+    display:none
+}
+
+
+
+
+ 
+/*JUST FOR NOW*/
+
+article{
+    display:none
+}
+
+.recycle{
+    display:none
+}
+
+footer{
+    display:none
+}
+
+
+}
